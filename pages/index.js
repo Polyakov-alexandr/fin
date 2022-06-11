@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Home = () => (
     <Link href="/login_phone">
-      <a>Login</a>
+      <a className='button'>Login</a>
     </Link>
 )
 
