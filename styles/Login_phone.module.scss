@@ -1,0 +1,25 @@
+.login_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    h1{
+        margin-bottom: 33px;
+    }
+    .input_block{
+        display: flex;
+
+        input{
+            width: 387px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .button{
+            width: 114px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}
