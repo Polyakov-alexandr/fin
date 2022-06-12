@@ -72,6 +72,7 @@ input {
   font-size: 16px;
   line-height: 1;
   cursor: pointer;
+  border: none;
   color: #ffffff;
   /* #181940 */
   display: flex;
@@ -80,6 +81,7 @@ input {
   text-align: center;
   background: #181940;
   border-radius: 12px;
+  
 }
 .but-close {
   position: absolute;
