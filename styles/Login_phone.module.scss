@@ -1,25 +1,107 @@
-.login_block{
+.login_block {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
-    h1{
+    h1 {
         margin-bottom: 33px;
     }
-    .input_block{
+    .input_block {
         display: flex;
 
-        input{
+        input {
             width: 387px;
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
         }
 
-        .button{
+        .button {
             width: 114px;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
+        }
+    }
+
+    .check_wrapper {
+        width: 458px;
+        height: 221px;
+        padding: 24px;
+        position: absolute;
+        bottom: 115px;
+        left: 0;
+        background: #f1f7ff;
+        border-radius: 12px;
+
+        label {
+            cursor: pointer;
+            position: relative;
+            padding: 0 0 0 28px;
+            margin: 0;
+            display: flex;
+            width: 100%;
+            &:first-child{
+                margin-bottom: 19px;
+            }
+        }
+
+        &_item {
+            width: 16px;
+            height: 16px;
+
+            border: 1px solid #cfd8e4;
+            border-radius: 4px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        input {
+            display: none;
+        }
+
+        &_icon {
+            width: 16px;
+            height: 14px;
+
+            border-radius: 4px;
+            background-color: #fff;
+            &::before {
+                content: "";
+                opacity: 0;
+                position: absolute;
+                left: 1px;
+                top: 1px;
+                background-image: url(/img/check.svg);
+                width: 11px;
+                height: 11px;
+            }
+        }
+        input:checked + .check_wrapper_icon:before {
+            opacity: 1;
+        }
+        input:checked + .check_wrapper_icon{
+            background: #181940;
+            opacity: 1;
+        }
+
+        &_text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            /* or 157% */
+
+            /* text */
+
+            color: #1c1c1c;
         }
     }
 }

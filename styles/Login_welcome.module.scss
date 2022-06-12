@@ -1,0 +1,65 @@
+.login_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    max-width: 387px;
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+        margin-bottom: 33px;
+    }
+
+    a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 15px;
+        /* identical to box height, or 94% */
+
+        /* #181940 */
+        display: inline-block;
+        color: #181940;
+    }
+
+    .phone_input {
+        width: 100%;
+        height: 56px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        /* identical to box height, or 107% */
+        display: flex;
+        justify-content: space-between;
+        padding: 0 16px;
+        align-items: center;
+        margin-bottom: 8px;
+        color: #79818c;
+        background: #ecf1f7;
+        opacity: 0.2;
+        border: 1px solid #cfd8e4;
+        border-radius: 12px;
+    }
+
+    .phone_text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        /* identical to box height, or 167% */
+        text-align: right;
+        color: #79818c;
+        margin-bottom: 12px;
+        opacity: 0.4;
+    }
+
+    input{
+        border-radius: 12px;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+        margin-top: 24px;
+        margin-bottom: 28px;
+    }
+}
