@@ -14,6 +14,9 @@ const Home = () => (
     <Link href="/login_welcome">
       <a className={styles.button + ' button'}>Login 2</a>
     </Link>
+    <Link href="/admin/users">
+      <a className={styles.button + ' button'}>admin</a>
+    </Link>
   </>
 )
 

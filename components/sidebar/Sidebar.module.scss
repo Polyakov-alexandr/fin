@@ -1,0 +1,76 @@
+.wrapper {
+    position: fixed;
+    top: 50px;
+    z-index: 10;
+    width: 88px;
+    height: 762px;
+
+    background: #ffffff;
+    box-shadow: -25px 0px 250px #ececec;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 32px;
+
+    .profile {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #181940;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1;
+        margin-bottom: 32px;
+        color: #f5f5f6;
+    }
+
+    a {
+        margin-bottom: 52px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -24px;
+            width: 23px;
+            height: 79px;
+            left: -32px;
+            background-image: url(/img/sidebar-svg.png);
+            background-repeat: no-repeat;
+            opacity: 0;
+        }
+
+        &:nth-child(5) {
+            margin-top: auto;
+        }
+        &:last-child {
+            margin-bottom: 0;
+
+            &:hover svg path,
+            &.active svg path {
+                fill: #fff;
+                stroke: #181940;
+                transition: all 0.3s;
+            }
+        }
+        &.active::before {
+            opacity: 1;
+        }
+        &:hover svg path,
+        &.active svg path {
+            fill: #181940;
+            transition: all 0.3s;
+        }
+        &:hover svg g,
+        &.active svg g {
+            opacity: 1;
+            transition: all 0.3s;
+        }
+    }
+}
