@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const login_welcome = () => {
     return (
-        <div className='h100'>
+        <div>
             <Link href='/'>
                 <a>
                     <div className="but-close">

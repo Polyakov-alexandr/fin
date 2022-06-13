@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const login_sms = () => {
     return (
-        <div className='h100'>
+        <div>
             <Link href='/login_phone'>
                 <a>
                     <div className="but-close">

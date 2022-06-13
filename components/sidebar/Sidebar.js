@@ -8,7 +8,7 @@ const Sidebar = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.profile}>B</div>
-            <Link href='users'>
+            <Link href='/users'>
                 <a className={pathname === '/admin/statistics' ? styles.active : null}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.4">
@@ -20,7 +20,7 @@ const Sidebar = () => {
                     </svg>
                 </a>
             </Link>
-            <Link href='users'>
+            <Link href='/users'>
                 <a className={pathname === '/admin/pay' ? styles.active : null}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.4">
@@ -29,7 +29,7 @@ const Sidebar = () => {
                     </svg>
                 </a>
             </Link>
-            <Link href='users'>
+            <Link href='/users'>
                 <a className={pathname === '/admin/users' ? styles.active : null}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.4">
