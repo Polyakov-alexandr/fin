@@ -8,7 +8,7 @@ const Sidebar = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.profile}>B</div>
-            <Link href='/users'>
+            <Link href='/admin/statistics'>
                 <a className={pathname === '/admin/statistics' ? styles.active : null}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.4">
@@ -20,8 +20,8 @@ const Sidebar = () => {
                     </svg>
                 </a>
             </Link>
-            <Link href='/users'>
-                <a className={pathname === '/admin/pay' ? styles.active : null}>
+            <Link href='/admin/payments'>
+                <a className={pathname === '/admin/payments' ? styles.active : null}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.4">
                             <path fillRule="evenodd" clipRule="evenodd" d="M4.31998 6.71988H18.24V4.31988C18.24 3.52459 17.5953 2.87988 16.8 2.87988C16.7408 2.87988 16.6816 2.88354 16.6228 2.89083L4.00279 4.45555C2.81046 4.61453 1.91998 5.63161 1.91998 6.8345V7.72837C2.52983 7.10603 3.37981 6.71988 4.31998 6.71988ZM19.6801 7.67988H4.32006C3.66548 7.67988 3.05491 7.94188 2.60573 8.40027L1.92006 9.09999V19.6799C1.92006 21.0054 2.99458 22.0799 4.32006 22.0799H19.6801C21.0055 22.0799 22.0801 21.0054 22.0801 19.6799V18.2399H16.8001C14.9444 18.2399 13.4401 16.7356 13.4401 14.8799C13.4401 13.0242 14.9444 11.5199 16.8001 11.5199H22.0801V10.0799C22.0801 8.75439 21.0055 7.67988 19.6801 7.67988ZM16.8005 12.48C15.475 12.48 14.4005 13.5545 14.4005 14.88C14.4005 16.2055 15.475 17.28 16.8005 17.28H22.0805V12.48H16.8005Z" fill="#616871" />
@@ -29,7 +29,7 @@ const Sidebar = () => {
                     </svg>
                 </a>
             </Link>
-            <Link href='/users'>
+            <Link href='/admin/users'>
                 <a className={pathname === '/admin/users' ? styles.active : null}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.4">
